@@ -1,16 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
     const nav = document.querySelector("nav");
+    const navToggle = document.getElementById("nav-toggle"); // Seleccionamos el icono
+    const navLinks = document.querySelector(".nav-links"); // Seleccionamos los enlaces del menú
 
+    // Cambiar el color de fondo del nav cuando se hace scroll
     window.addEventListener("scroll", function () {
-        console.log("Scrolling..."); // Debug para ver si la función se ejecuta
         if (window.scrollY > 50) {
-            console.log("Añadiendo clase 'scrolled'"); // Verifica si se activa el cambio
             nav.classList.add("scrolled");
         } else {
-            console.log("Quitando clase 'scrolled'"); // Verifica si se revierte el cambio
             nav.classList.remove("scrolled");
         }
     });
+
+    // Función para mostrar u ocultar los enlaces de navegación cuando se hace click en el icono
+    navToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");  // Alternamos la clase 'active' que controla la visibilidad
+    });
 });
-
-

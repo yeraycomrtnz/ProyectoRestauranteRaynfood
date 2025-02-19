@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante - RAYNFOOD</title>
+    <title>Menú - RAYNFOOD</title>
     <link rel="stylesheet" href="Estilos/Estilos.css">
-    <link rel="stylesheet" href="Estilos/restaurante.css">
+    <link rel="stylesheet" href="Estilos/restaurantecss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -26,39 +26,52 @@
         <p>RESTAURANTE FAMILIAR Y LUJOSO</p>
     </div>
 
+    <div class="linea-separadora-4"></div>
+
     <div class="menu-container">
-        <div class="contenedor">
+        <img class="background-image" src="imagenes/fondo.jpg" alt="Fondo del menú">
+        
+        <div class="menu-section">
             <h2>Sobre Nosotros</h2>
-            <p>En RAYNFOOD ofrecemos una experiencia gastronómica única en un entorno elegante y contemporáneo. Nuestra cocina fusiona lo mejor de las tradiciones locales con innovaciones culinarias para brindarte un menú excepcional.</p>
-        </div>
-    </section>
-
-    <section class="galeria">
-        <div class="contenedor">
-            <h2>Galería</h2>
-            <div class="imagenes-galeria">
-                <img src="imagenes/restaurante1.jpg" alt="Interior del restaurante">
-                <img src="imagenes/restaurante2.jpg" alt="Plato principal">
-                <img src="imagenes/restaurante3.jpg" alt="Ambiente del restaurante">
-                <img src="imagenes/restaurante3.jpg" alt="Personal">
+            <div class="menu-item">
+                <p>En RAYNFOOD ofrecemos una experiencia gastronómica única en un entorno elegante y contemporáneo. Nuestra cocina fusiona lo mejor de las tradiciones locales con innovaciones culinarias para brindarte un menú excepcional.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="ubicacion">
-        <div class="contenedor">
-            <h2>Ubicación</h2>
-            <p>Nos encontramos en el corazón de la ciudad, en un ambiente selecto y accesible para todos nuestros clientes. Visítanos en:</p>
-            <p><strong>Dirección:</strong> C. Portugal, 13, 1, 35010, Las Palmas de Gran Canaria, Las Palmas</p>
-            <div id="mapa">
-                <!-- Aquí puedes agregar un mapa interactivo de Google Maps si lo deseas -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.732559473493!2d-15.407412684461557!3d28.127200928595623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41923a538d72b7%3A0x9a7280a73534e2f6!2sC.%20Portugal%2C%2013%2C%2035010%20Las%20Palmas%20de%20Gran%20Canaria!5e0!3m2!1ses!2ses!4v1674636493762!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="menu-item">
+                <h3>Galería</h3>
+                <div class="imagenes-galeria">
+                    <div class="imagen-con-frase">
+                        <img src="imagenes/restint.jpeg" alt="Interior del restaurante">
+                        <p class="frase">Interior elegante</p>
+                    </div>
+                    <div class="imagen-con-frase">
+                        <img src="imagenes/sushi.avif" alt="Plato principal">
+                        <p class="frase">Plato estrella</p>
+                    </div>
+                    <div class="imagen-con-frase">
+                        <img src="imagenes/ambientre.jpeg" alt="Ambiente del restaurante">
+                        <p class="frase">Ambiente acogedor</p>
+                    </div>
+                    <div class="imagen-con-frase">
+                        <img src="imagenes/personal.avif" alt="Personal">
+                        <p class="frase">Nuestro equipo</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="menu-item">
+                <h3>Ubicación</h3>
+                <p>Nos encontramos en el corazón de la ciudad, en un ambiente selecto y accesible para todos nuestros clientes. Visítanos en:</p>
+                <p><strong>Dirección:</strong> C. Portugal, 13, 1, 35010, Las Palmas de Gran Canaria, Las Palmas</p>
+                <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.732559473493!2d-15.407412684461557!3d28.127200928595623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41923a538d72b7%3A0x9a7280a73534e2f6!2sC.%20Portugal%2C%2013%2C%2035010%20Las%20Palmas%20de%20Gran%20Canaria!5e0!3m2!1ses!2ses!4v1674636493762!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>        
+    </div>    
+
+    <div class="linea-separadora-3"></div>
 
     <footer class="footer">
-        <div class="footer-main"> <!-- Contenedor principal con la imagen de fondo -->
+        <div class="footer-main"> 
             <div class="footer-overlay"></div>
             <div class="footer-content">
                 <div class="footer-section">
