@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    line-height: 1.6;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    padding: 25px 50px;
+    z-index: 1000;
+    transition: 0.3s all ease;
+}
+
+nav.scrolled {
+    background: red !important;
+    padding: 15px 50px;
+}
+
+.nav-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E3B23C;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: 0.3s all ease;
+}
+
+nav ul li a:hover {
+    color: #E3B23C;
+}
+
+.menu-header {
+    text-align: center;
+    padding: 50px;
+    background-color: #1C1C1C;
+}
+
+.menu-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #E3B23C;
+}
+
+.menu-header p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    background: url('imagenes/restint.jpeg') no-repeat center center/cover; /* Fondo de la imagen */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; /* Altura completa de la vista */
+}
+
+.menu-section {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-section h2 {
+    font-size: 2rem;
+    color: #E3B23C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+}
+
+.menu-item p {
+    font-size: 1em;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #E3B23C;
+}
+
+/* Estilos para las imágenes del menú */
+.menu-item img {
+    width: 100%;  /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen se recorte y llene el área sin deformarse */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
+
+.footer-main {
+    position: relative;
+    background: url("../imagenes/FooterRestaurante.jpg") no-repeat center center/cover;
+    padding: 50px 20px;
+    background-size: cover; /* Ajusta la imagen de fondo para que cubra toda el área */
+    background-position: center center; /* Centra la imagen */
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Opacidad para resaltar el texto */
+}
+
+.footer-content {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    z-index: 1;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 1rem;
+}
+
+.btn-footer {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #E3B23C;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-footer:hover {
+    background: #c99a2f;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    color: #E3B23C;
+}
+
+.footer-bottom {
+    background: #1C1C1C;
+    padding: 15px 20px;
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    align-items: center;
+}
+
+.footer-bottom a {
+    color: #E3B23C;
+    text-decoration: none;
+    align-items: center;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}

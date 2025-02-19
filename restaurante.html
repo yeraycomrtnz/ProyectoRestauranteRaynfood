@@ -1,10 +1,11 @@
-<!DOCTYPE html>  
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAYNFOOD</title>
+    <title>Restaurante - RAYNFOOD</title>
     <link rel="stylesheet" href="Estilos/Estilos.css">
+    <link rel="stylesheet" href="Estilos/restaurante.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -20,30 +21,41 @@
         </ul>
     </nav>
 
-    <header class="hero">
-        <video autoplay muted loop class="video-background">
-            <source src="imagenes/RestauranteHeader - copia.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-            <h1>Restaurante <span class="highlight">RAYNFOOD</span></h1>
-            <p>CON TOQUES CONTEMPORÁNEOS</p>
-            <a href="menú.html" class="btn-menús">Ver Menú</a>
-        </div>
-    </header>
+    <div class="menu-header">
+        <h1>¿QUIÉN SOMOS?</h1>
+        <p>RESTAURANTE FAMILIAR Y LUJOSO</p>
+    </div>
 
-    <div class="linea-separadora"></div>
-
-    <section class="info-container">
-        <div class="info-image">
-            <img src="imagenes/comidalujosa.jpg" alt="Comidas lujosas">
-        </div>
-        <div class="info-text">
-            <h2>EXPERIENCIA ÚNICA</h2>
-            <p>En RAYNFOOD, cada plato es una obra de arte, combinando sabores exquisitos con una presentación impecable. Nuestro ambiente sofisticado y acogedor te transportará a un mundo de elegancia y sabor.</p>
+    <div class="menu-container">
+        <div class="contenedor">
+            <h2>Sobre Nosotros</h2>
+            <p>En RAYNFOOD ofrecemos una experiencia gastronómica única en un entorno elegante y contemporáneo. Nuestra cocina fusiona lo mejor de las tradiciones locales con innovaciones culinarias para brindarte un menú excepcional.</p>
         </div>
     </section>
-    
-    <div class="linea-separadora-2"></div>
+
+    <section class="galeria">
+        <div class="contenedor">
+            <h2>Galería</h2>
+            <div class="imagenes-galeria">
+                <img src="imagenes/restaurante1.jpg" alt="Interior del restaurante">
+                <img src="imagenes/restaurante2.jpg" alt="Plato principal">
+                <img src="imagenes/restaurante3.jpg" alt="Ambiente del restaurante">
+                <img src="imagenes/restaurante3.jpg" alt="Personal">
+            </div>
+        </div>
+    </section>
+
+    <section class="ubicacion">
+        <div class="contenedor">
+            <h2>Ubicación</h2>
+            <p>Nos encontramos en el corazón de la ciudad, en un ambiente selecto y accesible para todos nuestros clientes. Visítanos en:</p>
+            <p><strong>Dirección:</strong> C. Portugal, 13, 1, 35010, Las Palmas de Gran Canaria, Las Palmas</p>
+            <div id="mapa">
+                <!-- Aquí puedes agregar un mapa interactivo de Google Maps si lo deseas -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.732559473493!2d-15.407412684461557!3d28.127200928595623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41923a538d72b7%3A0x9a7280a73534e2f6!2sC.%20Portugal%2C%2013%2C%2035010%20Las%20Palmas%20de%20Gran%20Canaria!5e0!3m2!1ses!2ses!4v1674636493762!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-main"> <!-- Contenedor principal con la imagen de fondo -->

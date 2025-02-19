@@ -1,10 +1,11 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAYNFOOD</title>
+    <title>Reservar - RAYNFOOD</title>
     <link rel="stylesheet" href="Estilos/Estilos.css">
+    <link rel="stylesheet" href="Estilos/reservacss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -14,39 +15,43 @@
         <ul>
         <li><a href="Paginaweb.html" class="btn-inicio">Inicio</a></li>
         <li><a href="restaurante.html" class="btn-restaurante">Restaurante</a></li>
-        <li><a href="menú.html" class="btn-menús">Menús</a></li>
+        <li><a href="menu.html" class="btn-menús">Menús</a></li>
         <li><a href="contacto.html" class="btn-contacto">Contacto</a></li>
         <li><a href="reserva.html" class="btn-reservar">Reservar</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <video autoplay muted loop class="video-background">
-            <source src="imagenes/RestauranteHeader - copia.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-            <h1>Restaurante <span class="highlight">RAYNFOOD</span></h1>
-            <p>CON TOQUES CONTEMPORÁNEOS</p>
-            <a href="menú.html" class="btn-menús">Ver Menú</a>
-        </div>
-    </header>
+    <div class="menu-container">
+        <div class="overlay"></div>
+        <form class="reservation-form">
+            <h2>Reserva tu mesa</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-    <div class="linea-separadora"></div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
 
-    <section class="info-container">
-        <div class="info-image">
-            <img src="imagenes/comidalujosa.jpg" alt="Comidas lujosas">
-        </div>
-        <div class="info-text">
-            <h2>EXPERIENCIA ÚNICA</h2>
-            <p>En RAYNFOOD, cada plato es una obra de arte, combinando sabores exquisitos con una presentación impecable. Nuestro ambiente sofisticado y acogedor te transportará a un mundo de elegancia y sabor.</p>
-        </div>
-    </section>
-    
-    <div class="linea-separadora-2"></div>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="personas">Número de Personas:</label>
+            <input type="number" id="personas" name="personas" required>
+
+            <label for="fecha">Fecha de Reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora de Reserva:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="submit" class="btn-reservar">Confirmar Reserva</button>
+        </form>
+    </div>
 
     <footer class="footer">
-        <div class="footer-main"> <!-- Contenedor principal con la imagen de fondo -->
+        <div class="footer-main"> 
             <div class="footer-overlay"></div>
             <div class="footer-content">
                 <div class="footer-section">
